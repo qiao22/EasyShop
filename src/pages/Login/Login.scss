@@ -1,0 +1,43 @@
+.login {
+    width: 100%;
+    height: 100%;
+    .logo{
+        text-align: center;
+        padding-top: 2.13333rem;
+        padding-bottom: 3.09333rem;
+        img{
+            width: 3.57333rem;
+            height: 1.2rem;
+        }
+    }
+}
+
+.form {
+    width: 100%;
+    ul>li{
+        width: 100%;
+        height: 0.96rem;
+        margin-bottom: 0.8rem;
+        padding: 0 .53333rem;
+        text-align: center;
+        input[type="user"],input[type="password"]{
+            width: 100%;
+            height: 100%;
+            line-height:0.96rem;
+            font-size: 0.4rem;
+            border: none;
+            border-bottom: 1px solid #CCC;
+            padding-left: 3%;
+            outline:none;
+        }
+        input[type="submit"]{
+            width: 100%;
+            height: 1.2rem;
+            line-height:0.96rem;
+            font-size: 0.4rem;
+            background-color: blue;
+            color: white;
+            outline:none;
+        }
+    }
+}
