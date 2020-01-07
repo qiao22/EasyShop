@@ -1,11 +1,10 @@
-import axios from 'axios';
-
+import axios from 'axios'
 
 let Connection = axios.create({
     baseURL: 'http://127.0.0.1:8888',
     timeout: 5000,
-    // headers:{}
-});
+    headers:{'x-nideshop-token': window.localStorage.getItem('token')}
+})
 
 Connection.interceptors.request.use(config => {
     return config;

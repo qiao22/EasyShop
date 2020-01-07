@@ -15,19 +15,33 @@ interface PropType {
     routes: ItemType[]
 }
 
-const Main: React.FC<PropType> = (props) => {
-
-    const routes = props.routes.filter(item=> item.path)
-
+const Main: React.FC<PropType> = (props:any) => {
     return (
         <div className="main">
             <RouterView routes={props.routes}></RouterView>
             <footer>
-                {
-                    routes.map((item:ItemType, index) =>{
-                        return <NavLink to={item.path} key={index}>{item.title}</NavLink>
-                    })
-                }
+                <nav>
+                    <NavLink className="tabbar" activeClassName="active" to="/main/home" >
+                        <i className={ props.location.pathname === '/main/home' ? 'tabbar_icon active_home':'tabbar_icon home'} />
+                        <span className="tabbar_text">主页</span>
+                    </NavLink>
+                    <NavLink className="tabbar" activeClassName="active" to="/main/special" >
+                        <i className={ props.location.pathname === '/main/special' ? 'tabbar_icon active_special':'tabbar_icon special'} />
+                        <span className="tabbar_text">专题</span>
+                    </NavLink>
+                    <NavLink className="tabbar" activeClassName="active" to="/main/type" >
+                        <i className={ props.location.pathname === '/main/type' ? 'tabbar_icon active_type':'tabbar_icon type'} />
+                        <span className="tabbar_text">分类</span>
+                    </NavLink>
+                    <NavLink className="tabbar" activeClassName="active" to="/main/cart" >
+                        <i className={ props.location.pathname === '/main/cart' ? 'tabbar_icon active_cart':'tabbar_icon cart'} />
+                        <span className="tabbar_text">购物车</span>
+                    </NavLink>
+                    <NavLink className="tabbar" activeClassName="active" to="/main/my" >
+                        <i className={ props.location.pathname === '/main/my' ? 'tabbar_icon active_my':'tabbar_icon my'} />
+                        <span className="tabbar_text">我的</span>
+                    </NavLink>
+                </nav>
             </footer>
         </div>
     )

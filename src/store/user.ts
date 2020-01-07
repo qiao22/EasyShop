@@ -9,7 +9,12 @@ export default class UserStore {
     
     @action
     async userLogin(form:Object){
-        const res = await login(form)
-        console.log(res)
+        const res:any = await login(form)
+        if(res.errno === 0) {
+            this.token = res.data.sessionKey
+            window.localStorage.setItem('token',res.data.sessionKey)
+        }
+        return res
+        
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 // 导入store
 import User from './user';
 import Home from './home';

@@ -1,10 +1,85 @@
+@import '../../utils/pxtoRem.scss';
+
 .main {
     display: flex;
     flex-direction: column;
-    footer{
-        width: 100%;
-        height: 1.333333rem;
-        line-height:1.333333rem;
-        
+}
+
+footer{
+    width: 100%;
+    height: pxtoRem(98px);
+    nav{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        -moz-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        justify-content: space-around;
+        height: 1.30667rem;
+        border-top: 1px solid #d9d9d9;
+        .tabbar {
+            color: #666;
+            flex-direction: column;
+            text-align: center;
+            .tabbar_icon {
+                width: pxtoRem(40px);
+                height: pxtoRem(40px);
+                display: inline-block;
+                vertical-align: middle;
+                background: url('../../assets/img/tabbar_icon_bg.png') no-repeat;
+                background-size: .53333rem 6.53333rem;
+            }
+            .home {
+                background-position: 0 -3.33333rem;
+            }
+            .active_home {
+                background-position: 0 -2.66667rem;
+            }
+            .special {
+                background-position: 0 -4.66667rem;
+            }
+            .active_special {
+                background-position: 0 -4rem;
+            }
+            .type {
+                background-position: 0 -2rem;
+            }
+            .active_type {
+                background-position: 0 -1.33333rem;
+            }
+            .cart {
+                background-position: 0 -.66667rem;
+            }
+            .active_cart {
+                background-position: 0 0
+            }
+            .my {
+                background-position: 0 -6rem;
+            }
+            .active_my {
+                background-position: 0 -5.33333rem;
+            }
+            .tabbar_text {
+                display: block;
+                margin-top: pxtoRem(7px);
+                font-size: .32rem;
+                // line-height: 1.333333rem;
+            }
+        }
+        .active {
+            color: red;
+        }
     }
 }
