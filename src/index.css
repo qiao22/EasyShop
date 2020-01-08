@@ -5,6 +5,7 @@
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -28,4 +29,6 @@ html,body,#root,.App,.App>div {
 
 .home,.special,.type,.cart,.my{
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }

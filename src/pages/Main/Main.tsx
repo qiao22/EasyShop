@@ -15,6 +15,7 @@ interface PropType {
     routes: ItemType[]
 }
 
+
 const Main: React.FC<PropType> = (props:any) => {
     return (
         <div className="main">
@@ -25,13 +26,13 @@ const Main: React.FC<PropType> = (props:any) => {
                         <i className={ props.location.pathname === '/main/home' ? 'tabbar_icon active_home':'tabbar_icon home'} />
                         <span className="tabbar_text">主页</span>
                     </NavLink>
-                    <NavLink className="tabbar" activeClassName="active" to="/main/special" >
-                        <i className={ props.location.pathname === '/main/special' ? 'tabbar_icon active_special':'tabbar_icon special'} />
-                        <span className="tabbar_text">专题</span>
-                    </NavLink>
                     <NavLink className="tabbar" activeClassName="active" to="/main/type" >
                         <i className={ props.location.pathname === '/main/type' ? 'tabbar_icon active_type':'tabbar_icon type'} />
                         <span className="tabbar_text">分类</span>
+                    </NavLink>
+                    <NavLink className="tabbar" activeClassName="active" to="/main/special" >
+                        <i className={ props.location.pathname === '/main/special' ? 'tabbar_icon active_special':'tabbar_icon special'} />
+                        <span className="tabbar_text">专题</span>
                     </NavLink>
                     <NavLink className="tabbar" activeClassName="active" to="/main/cart" >
                         <i className={ props.location.pathname === '/main/cart' ? 'tabbar_icon active_cart':'tabbar_icon cart'} />

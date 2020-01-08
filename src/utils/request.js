@@ -3,10 +3,11 @@ import axios from 'axios'
 let Connection = axios.create({
     baseURL: 'http://127.0.0.1:8888',
     timeout: 5000,
-    headers:{'x-nideshop-token': window.localStorage.getItem('token')}
 })
 
+
 Connection.interceptors.request.use(config => {
+    config.headers['x-nideshop-token'] = window.localStorage.getItem('token')
     return config;
 }, error => {
     return Promise.reject(error);
@@ -16,16 +17,10 @@ Connection.interceptors.response.use(response => {
     if (response.status === 200) {
         return response.data;
     } else {
-        this.$notify({
-            type: 'warning',
-            message: response.text
-        })
+        console.log(response)
     }
 }, error => {
-    this.$notify({
-        type: 'warning',
-        message: error
-    })
+    console.log(error)
 });
 
 export default Connection;

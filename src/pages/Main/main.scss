@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-footer{
+footer {
     width: 100%;
     height: pxtoRem(98px);
     nav{
@@ -27,7 +27,7 @@ footer{
         -webkit-justify-content: space-around;
         -moz-justify-content: space-around;
         justify-content: space-around;
-        height: 1.30667rem;
+        height: pxtoRem(98px);
         border-top: 1px solid #d9d9d9;
         .tabbar {
             color: #666;

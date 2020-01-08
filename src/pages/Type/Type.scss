@@ -1,0 +1,115 @@
+@import '../../utils/pxtoRem.scss';
+
+.t_top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    height: pxtoRem(88px);
+    padding: 0 pxtoRem(30px);
+    background-color: #fff;
+    position: relative;
+    .t_search{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        -moz-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        width: 100%;
+        height: pxtoRem(56px);
+        font-size: pxtoRem(28px);
+        background-color: #ededed;
+        border-radius: pxtoRem(8px);
+        .search_icon {
+            width: pxtoRem(28px);
+            height: pxtoRem(28px);
+            background-image: url('../../assets/img/search_icon.png');
+            background-size: cover;
+        }
+
+        .t_placeholder {
+            color: #666;
+        }
+    }
+}
+
+.t_top::after{
+    content: '';
+    position: absolute;
+    background-color: #d9d9d9;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: 50% 100% 0;
+    bottom: 0;
+}
+
+
+
+.t_main {
+    flex: 1;
+    .t_nav {
+        float: left;
+        width: pxtoRem(162px);
+        height: 100%;
+        background-color: #fff;
+        position: relative;
+    }
+    .t_nav>div{
+        transform:translateY(0px);
+        -webkit-transform:translateY(0px);
+    }
+    .t_nav::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0,0,0,.15);
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        transform-origin: 100% 50% 0;
+        right: 0;
+    }
+    .t_content {
+        float: left;
+    }
+}
+
+.t_nav_ul {
+    padding: .53333rem 0;
+    .item {
+        margin-top: .53333rem;
+        width: 100%;
+        height: .66667rem;
+        text-align: center;
+        border: none;
+    }
+    .item.active:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: .08rem;
+        background-color: #ab2b2b;
+    }
+}

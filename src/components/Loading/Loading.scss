@@ -1,0 +1,22 @@
+@import '../../utils/pxtoRem.scss';
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    img{
+        width: pxtoRem(200px);
+        border-radius: pxtoRem(20px);
+        background-color: rgba($color: #000000, $alpha: .5);
+    }
+}
+
+.action {
+    display: flex;
+}

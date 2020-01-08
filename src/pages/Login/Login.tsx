@@ -6,8 +6,8 @@ import { useObserver } from 'mobx-react-lite'
 
 const Login: React.FC = () => {
 
-    const [ mobile, setMobile ] = useState("")
-    const [ password, setPassword ] = useState("")
+    const [ mobile, setMobile ] = useState("15323807318")
+    const [ password, setPassword ] = useState("123456")
     const history = useHistory()
 
     let store = useStore()
@@ -16,7 +16,6 @@ const Login: React.FC = () => {
     const loginFn = async () => {
         let res:any = await user.userLogin({mobile,password})
         if(res.errno === 0) {
-            console.log(1)
             history.push("/main/home")
         }
     }
@@ -28,8 +27,8 @@ const Login: React.FC = () => {
             </div>
             <div className="form">
                 <ul>
-                    <li><input type="user" onChange={(e)=>setMobile(e.target.value)} placeholder="请输入手机号" /></li>
-                    <li><input type="password" onChange={(e)=>setPassword(e.target.value)} placeholder="请输入密码" /></li>
+                    <li><input type="user" value={mobile} onChange={(e)=>setMobile(e.target.value)} placeholder="请输入手机号" /></li>
+                    <li><input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="请输入密码" /></li>
                     <li><input type="submit" value="登陆" onClick={loginFn} /></li>
                 </ul>
             </div>

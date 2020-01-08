@@ -1,4 +1,3 @@
-// import React from 'react';
 import { login } from '../api/login';
 import { observable, action } from 'mobx';
 
@@ -15,6 +14,5 @@ export default class UserStore {
             window.localStorage.setItem('token',res.data.sessionKey)
         }
         return res
-        
     }
 }
