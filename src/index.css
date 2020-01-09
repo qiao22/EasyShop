@@ -6,6 +6,7 @@
   outline: none;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
 
 body {
@@ -31,4 +32,5 @@ html,body,#root,.App,.App>div {
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }

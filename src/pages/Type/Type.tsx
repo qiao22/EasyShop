@@ -10,6 +10,7 @@ const Type: React.FC = () => {
 
     useEffect(()=>{
         type.setType()
+        console.log('生命周期')
     }, [type])
 
     return useObserver(()=>(
@@ -27,8 +28,8 @@ const Type: React.FC = () => {
                             {
                                 type.typenavlist.map((item:any,index:number) => {
                                     return (
-                                        <li className="item" key={index}>
-                                            {item.name}
+                                        <li className={index===type.currentindex ? 'item active':'item'} key={index} onClick={()=>type.setCurrentType(index)}>
+                                            <span className={ index===type.currentindex ? 'text active':'text' }>{item.name}</span>
                                         </li>
                                     )
                                 })
@@ -36,7 +37,30 @@ const Type: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="t_content"></div>
+                <div className="t_content">
+                    <div>
+                        <div className="t_content_wrap">
+                            <div className="banner">
+                                <img src={type.currentdata.wap_banner_url} alt=""/>
+                                <span>{type.currentdata.front_desc}</span>
+                            </div>
+                            <div className="list">
+                                <ul>
+                                    {
+                                        type.currentdata.subCategoryList &&　type.currentdata.subCategoryList.map((item:any,index:number)=>{
+                                            return (
+                                                <li key={index}>
+                                                    <img src={item.wap_banner_url} alt=""/>
+                                                    <span>{item.name}</span>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     ))
