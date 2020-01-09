@@ -14,6 +14,7 @@ export default [
     {
         path:'/main',
         component:Main,
+        redirect: '/main/home',
         children: [
             {
                 path:'/main/home',

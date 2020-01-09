@@ -1,7 +1,14 @@
 // import React from 'react';
-// import { login } from '../api/login';
+import { home } from '../api/home';
+import {observable,action} from 'mobx'
 
-
-export default class UserStore {
-
+export default class HomeStore {
+    @observable
+    
+    @action 
+    async homeList(){
+        const res:any = await home()
+        return res
+    }
+   
 }

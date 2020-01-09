@@ -1,0 +1,96 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+
+.content .header {
+  width: 100%;
+  background: white;
+}
+
+.content .header .title {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.content .header .title img {
+  width: 1.84rem;
+  height: .53333rem;
+  display: block;
+  margin-left: 0.3rem;
+  margin-right: 0.2rem;
+  float: left;
+}
+
+.content .header .title .ipt {
+  float: left;
+  width: 6rem;
+  height: .74667rem;
+  line-height: .74667rem;
+  margin: 0 auto;
+  font-size: .37333rem;
+  margin-right: 0.1rem;
+  background-color: #ededed;
+}
+
+.content .header .title .ipt #first {
+  margin-left: 1rem;
+}
+
+.content .header .title .blogin {
+  width: 1.2rem;
+  height: 0.6rem;
+  font-size: 13px;
+  margin-right: 0.1rem;
+  background: white;
+  border: 0;
+  border: 1px solid red;
+}
+
+.content .header .nav {
+  width: 100%;
+}
+
+.content .header .nav .ul {
+  width: 8rem;
+  height: 35px;
+  display: -webkit-box;
+  overflow-x: scroll;
+  float: left;
+}
+
+.content .header .nav .ul .slide-item {
+  font-size: 17px;
+  padding: 5px 10px;
+  height: 35px;
+}
+
+.content .header .nav .ul::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+}
+
+.content .header .nav .ul .active {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.content .header .nav .dj span {
+  float: right;
+  line-height: 1rem;
+}
+
+.content .main {
+  flex: 1;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.content footer {
+  width: 100%;
+  height: 1.333333rem;
+  line-height: 1.333333rem;
+}

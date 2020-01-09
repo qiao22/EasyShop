@@ -1,0 +1,61 @@
+.home{
+    width: 100%;
+    background: white;
+    .header{
+        width: 100%;
+        height: 6rem;
+        background: palegreen;
+        .swiper{
+            width: 100%;
+            height: 5rem;
+            background:orange;
+        }
+    }
+    .pinpai{
+        width: 100%;
+        p{
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+            font-size: 18px;
+        }
+        .ppbox{
+            width: 100%;
+            height: 6.6rem;
+            // background:orchid;
+            .one, .two, .three, .four{
+                text-align: center;
+                line-height: 3.3rem;
+                float: left;
+                width: 4.84rem;
+                height: 3.3rem;
+                margin: 2px;
+                background: tomato;
+            }
+            .one img, .two img, .three img, .four img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .newp{
+        width: 100%;
+        height: 7.6rem                                                                                                                                        ;
+        p{
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+            font-size: 18px;
+        }
+        .dlone, .dtwo, .dthree, .dfour{
+            text-align: center;
+            line-height: 3.3rem;
+            float: left;
+            width: 5rem;
+            height: 3.3rem;
+            background: tomato;
+        }
+    }
+}
