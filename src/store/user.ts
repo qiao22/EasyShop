@@ -11,7 +11,8 @@ export default class UserStore {
         const res:any = await login(form)
         if(res.errno === 0) {
             this.token = res.data.sessionKey
-            window.localStorage.setItem('token',res.data.sessionKey)
+            window.localStorage.setItem('user',res.data.mobile)
+            window.sessionStorage.setItem('token',res.data.sessionKey)
         }
         return res
     }

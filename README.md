@@ -2,8 +2,20 @@
 
 ### 技术栈
     React hooks + react-router + Mobx + TypeScript + axios + Eslint 
-    
+
+### 使用的技术点
+- 使用flexible进行rem的适配
+- axios的二次封装
+- 雪碧图,精灵图
+
+
 ### 完成的功能点
 - [x] rem适配
 - [x] 登陆功能
-- [ ] 分类(未完成)
+- [x] 分类
+- [x] 我的
+- [] 导航守卫
+- [] 详情
+- [] 购物车
+- [] 首页
+- [] 专题

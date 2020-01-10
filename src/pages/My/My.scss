@@ -1,2 +1,111 @@
 @import '../../utils/pxtoRem.scss';
 
+.my{
+    background: #F2F5F4
+}
+
+.info{
+    width: 100%;
+    height: pxtoRem(300px);
+    background-image: url('http://yanxuan.nosdn.127.net/d069279e5834bbca17065a9855a014bf.png?imageView&type=webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    img{
+        float: left;
+        width: pxtoRem(180px);
+        height: pxtoRem(180px);
+        border-radius: 50%;
+        margin: 0 pxtoRem(40px);
+    }
+    .information{
+        font-size: pxtoRem(36px);
+        color: white;
+        p{
+            height: pxtoRem(50px);
+            line-height: pxtoRem(50px);
+        }
+    }
+}
+
+.my_list{
+    width: 100%;
+    margin-bottom: .53333rem;
+    background: #fff;
+    ul{
+        width: 100%;
+        li{
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #CCC;
+            width: pxtoRem(250px);
+            height: pxtoRem(180px);
+            padding-top: .6rem;
+            text-align: center;
+            .my_item_icon{
+                width: pxtoRem(50px);
+                height: pxtoRem(50px);
+                background-image: url('../../assets/img/my_icon_bg.png');
+                background-repeat: no-repeat;
+                background-size: .85333rem 16.48rem;
+            }
+            .u-icon-ulist {
+                background-position: 0 -11.12rem;
+            }
+            .u-icon-upin {
+                background-position: 0 -12.61333rem;
+            }
+            .u-icon-uaftersale {
+                background-position: 0 -4.72rem;
+            }
+            .u-icon-ulead {
+                background-position: 0 -10.32rem;
+            }
+            .u-icon-upreemption {
+                background-position: 0 -14.21333rem;
+            }
+            .u-icon-upoints {
+                background-position: 0 -13.41333rem;
+            }
+            .u-icon-umembershipBenefits {
+                background-position: 0 -11.92rem;
+            }
+            .u-icon-uaddress {
+                background-position: 0 -3.92rem;
+            }
+            .u-icon-usecurity {
+                background-position: 0 -15.81333rem;
+            }
+            .u-icon-uhelp-kefu {
+                background-position: 0 -7.92rem;
+            }
+            .u-icon-ufeedback {
+                background-position: 0 -6.32rem;
+            }
+            .my_item_text{
+                display: block;
+                font-size: .32rem;
+                line-height: .45333rem;
+                color: #333;
+            }
+        }
+        li:nth-child(3n+1), li:nth-child(3n+2){
+            border-right: 1px solid #CCC;
+        }
+    }
+}
+
+.outlogin{
+    width: 100%;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    padding: 0 pxtoRem(30px);
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #333;
+    font-size: .37333rem;
+}

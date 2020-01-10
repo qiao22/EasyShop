@@ -7,7 +7,7 @@ let Connection = axios.create({
 
 
 Connection.interceptors.request.use(config => {
-    config.headers['x-nideshop-token'] = window.localStorage.getItem('token')
+    config.headers['x-nideshop-token'] = window.sessionStorage.getItem('token')
     return config;
 }, error => {
     return Promise.reject(error);
