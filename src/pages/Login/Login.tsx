@@ -9,12 +9,11 @@ const Login: React.FC = () => {
     const [ mobile, setMobile ] = useState("15323807318")
     const [ password, setPassword ] = useState("123456")
     const history = useHistory()
-
     let store = useStore()
     let { user } = store
 
     const loginFn = async () => {
-        let res:any = await user.userLogin({mobile,password})
+        let res:any = await user.userLogin({mobile, password})
         if(res.errno === 0) {
             history.push("/main/home")
         }

@@ -1,4 +1,4 @@
-import React from 'react';
-import store from '../store/index';
+import React from 'react'
+import store from '../store/index'
 
-export default React.createContext(store);
+export default React.createContext(store)

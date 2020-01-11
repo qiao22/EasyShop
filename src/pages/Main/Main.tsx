@@ -1,22 +1,11 @@
-import React from 'react';
-import './main.scss';
-import RouterView from '../../router/routerview';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import './main.scss'
+import RouterView from '../../router/routerview'
+import { NavLink } from 'react-router-dom'
+import { MainPropType } from '../../utils/type'
 
-interface ItemType {
-    path?: any,
-    component?: any,
-    from?: string,
-    to?: any,
-    title:string
-}
-
-interface PropType {
-    routes: ItemType[]
-}
-
-
-const Main: React.FC<PropType> = (props:any) => {
+const Main: React.FC<MainPropType> = (props:any) => {
+    
     return (
         <div className="main">
             <RouterView routes={props.routes}></RouterView>

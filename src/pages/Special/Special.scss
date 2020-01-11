@@ -1,0 +1,36 @@
+@import '../../utils/pxtoRem.scss';
+
+.special{
+    background:#F2F5F4;
+}
+
+.s_li{
+    background: #FFF;
+    width: 100%;
+    margin-bottom: pxtoRem(30px);
+    .s_li_img{
+        width: 100%;
+        height: pxtoRem(350px);
+    }
+    .s_li_text{
+        text-align: center;
+        p,span{
+            line-height: pxtoRem(50px);
+            padding: 0 pxtoRem(15px);
+        }
+        p:first-child{
+            font-size: pxtoRem(28px);
+            font-weight: bold;
+        }
+        p:nth-child(2){
+            font-size: pxtoRem(24px);
+            color: #999999;
+        }
+        span{
+            display: block;
+            color: red;
+            font-weight: bolder;
+            font-size: pxtoRem(26px);
+        }
+    }
+}

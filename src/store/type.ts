@@ -18,6 +18,7 @@ export default class UserStore {
         this.typenavlist = res.data.categoryList
         this.currentdata = res.data.currentCategory
         console.log(res.data.categoryList)
+        console.log(res.data.currentCategory)
     }
 
     @action
