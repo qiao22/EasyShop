@@ -1,0 +1,7 @@
+@import '../../utils/pxtoRem.scss';
+
+.banner{
+    width: 100%;
+    height: pxtoRem(300px);
+    background-color: red;
+}

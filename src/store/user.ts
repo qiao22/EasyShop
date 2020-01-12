@@ -1,5 +1,6 @@
-import { login } from '../api/login';
-import { observable, action } from 'mobx';
+import { observable, action } from 'mobx'
+import { login } from '../api/login'
+
 
 
 export default class UserStore {

@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import './Home.scss'
+import useStore from '../../utils/useStore'
+import { useObserver } from 'mobx-react-lite'
+
 const Home: React.FC = () => {
-    return (
+    const store = useStore()
+    const { home } = store
+
+    useEffect(()=>{
+        home.setHome()
+    },[home])
+
+    return useObserver(()=>(
         <div className="home">
-            home
+
         </div>
-    )
+    ))
 }
 
 export default Home

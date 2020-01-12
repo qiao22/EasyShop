@@ -6,8 +6,8 @@ import { SpecialItemType } from '../../utils/type'
 
 const Special: React.FC = () => {
 
-    let store = useStore()
-    let { special } = store
+    const store = useStore()
+    const { special } = store
 
     useEffect(()=>{
         special.setSpecialList('1','10')

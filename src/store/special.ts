@@ -1,5 +1,6 @@
-import { getSpecialList } from '../api/special';
 import { observable, action } from 'mobx'
+import { getSpecialList } from '../api/special'
+
 
 export default class UserStore {
     @observable

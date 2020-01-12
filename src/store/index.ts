@@ -6,7 +6,6 @@ import Home from './home'
 import Type from './type'
 import Special from './special'
 import Cart from './cart'
-import My from './my'
 
 export default {
     app: new App(),
@@ -14,6 +13,5 @@ export default {
     home: new Home(),
     type: new Type(),
     special: new Special(),
-    cart: new Cart(),
-    my: new My()
+    cart: new Cart()
 }

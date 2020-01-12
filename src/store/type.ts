@@ -1,5 +1,6 @@
-import { getType, getCurrentType } from '../api/type';
-import { observable, action } from 'mobx';
+import { observable, action } from 'mobx'
+import { getType, getCurrentType } from '../api/type'
+
 
 
 export default class UserStore {
